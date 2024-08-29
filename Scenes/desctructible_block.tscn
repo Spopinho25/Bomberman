@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwxd2vomhhl0d"]
+
+[ext_resource type="Texture2D" uid="uid://d1vw48yd5eebi" path="res://Assets/Block/Spr_Parede.png" id="1_qh1nw"]
+[ext_resource type="Script" path="res://Scripts/desctructible_block.gd" id="1_wpo0r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kviru"]
+size = Vector2(16, 16)
+
+[node name="DesctructibleBlock" type="StaticBody2D" groups=["desctructibleBlock"]]
+position = Vector2(-6, -6)
+collision_mask = 58
+script = ExtResource("1_wpo0r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(14, 14)
+shape = SubResource("RectangleShape2D_kviru")
+
+[node name="SprParede" type="Sprite2D" parent="."]
+position = Vector2(14, 14)
+texture = ExtResource("1_qh1nw")

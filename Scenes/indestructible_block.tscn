@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://3limiesggoar"]
+
+[ext_resource type="Texture2D" uid="uid://cty25gwntq1ao" path="res://Assets/Block/Spr_ParedeIndes.png" id="1_u3vxd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dcu5h"]
+size = Vector2(16, 16)
+
+[node name="indestructibleBlock" type="StaticBody2D" groups=["indestructibleBlock"]]
+collision_mask = 10
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_dcu5h")
+
+[node name="SprParedeIndes" type="Sprite2D" parent="."]
+position = Vector2(8, 8)
+texture = ExtResource("1_u3vxd")
