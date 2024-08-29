@@ -175,9 +175,8 @@ script = SubResource("GDScript_jlwtj")
 position = Vector2(0, -12)
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_06u7b")
-animation = &"Left"
+animation = &"Down"
 autoplay = "Down"
-frame_progress = 0.42334
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -2)

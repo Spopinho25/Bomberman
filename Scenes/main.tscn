@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://c41xukxnefcir"]
+[gd_scene load_steps=11 format=4 uid="uid://c41xukxnefcir"]
 
 [ext_resource type="Texture2D" uid="uid://dk0fnnlnp4x70" path="res://Assets/Block/Spr_Chao.png" id="1_2t5yy"]
 [ext_resource type="Texture2D" uid="uid://d1vw48yd5eebi" path="res://Assets/Block/Spr_Parede.png" id="2_t5u21"]
@@ -12,15 +12,22 @@ texture = ExtResource("1_2t5yy")
 [sub_resource type="TileSet" id="TileSet_eymvt"]
 sources/0 = SubResource("TileSetAtlasSource_m31ca")
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_xxoeq"]
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bjflr"]
 texture = ExtResource("2_t5u21")
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u1q6l"]
 texture = ExtResource("3_oogr2")
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSet" id="TileSet_uxcyp"]
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 58
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_xxoeq")
 sources/0 = SubResource("TileSetAtlasSource_bjflr")
 sources/1 = SubResource("TileSetAtlasSource_u1q6l")
 
