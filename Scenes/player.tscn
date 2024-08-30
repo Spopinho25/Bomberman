@@ -1,31 +1,30 @@
-[gd_scene load_steps=21 format=3 uid="uid://bxpahars3cdn8"]
+[gd_scene load_steps=25 format=3 uid="uid://bxpahars3cdn8"]
 
-[ext_resource type="Texture2D" uid="uid://f86vbcdfs728" path="res://Assets/sprites/$npc011.png" id="1_o71gc"]
+[ext_resource type="Texture2D" path="res://Assets/sprites/$npc011.png" id="1_o71gc"]
 
 [sub_resource type="GDScript" id="GDScript_jlwtj"]
 script/source = "extends CharacterBody2D
 
 @export var speed: float = 100.0
 
-func _process(delta: float) -> void:
+func phisics_process(delta: float) -> void:
 	var velocity = Vector2.ZERO
 
 	if Input.is_action_pressed(\"MoveRight\"):
+		$AnimatedSprite2D.play(\"Right\")
 		velocity.x += 1
+
 	if Input.is_action_pressed(\"MoveLeft\"):
+		$AnimatedSprite2D.play(\"Left\")
 		velocity.x -= 1
 	if Input.is_action_pressed(\"MoveDown\"):
+		$AnimatedSprite2D.play(\"Down\")
 		velocity.y += 1
 	if Input.is_action_pressed(\"MoveUp\"):
+		$AnimatedSprite2D.play(\"Up\")
 		velocity.y -= 1
 
 	velocity = velocity.normalized() * speed
-
-	# Usando move_and_collide para detectar colisões
-	var collision = move_and_collide(velocity * delta)
-
-	if collision:
-		print(\"Colidiu com:\", collision.get_collider())
 "
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sff12"]
@@ -43,6 +42,22 @@ region = Rect2(64, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_c3wgs"]
 atlas = ExtResource("1_o71gc")
 region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6xpei"]
+atlas = ExtResource("1_o71gc")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fbdhy"]
+atlas = ExtResource("1_o71gc")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tutp6"]
+atlas = ExtResource("1_o71gc")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_depuv"]
+atlas = ExtResource("1_o71gc")
+region = Rect2(32, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a0xux"]
 atlas = ExtResource("1_o71gc")
@@ -113,6 +128,38 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_6xpei")
+}],
+"loop": true,
+"name": &"IdleDown",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fbdhy")
+}],
+"loop": true,
+"name": &"IdleLeft",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tutp6")
+}],
+"loop": true,
+"name": &"IdleRight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_depuv")
+}],
+"loop": true,
+"name": &"IdleUp",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_a0xux")
 }, {
 "duration": 1.0,
@@ -176,7 +223,6 @@ position = Vector2(0, -12)
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_06u7b")
 animation = &"Down"
-autoplay = "Down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -2)

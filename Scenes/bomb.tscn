@@ -1,0 +1,78 @@
+[gd_scene load_steps=10 format=3 uid="uid://belvk5h61uxfe"]
+
+[ext_resource type="Texture2D" uid="uid://f21liftsru2p" path="res://Assets/sprites/Bomb/Bomb64.png" id="1_odtc2"]
+[ext_resource type="Script" path="res://Scripts/bomb.gd" id="1_s6sop"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4wpqb"]
+atlas = ExtResource("1_odtc2")
+region = Rect2(0, 0, 16, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fqvfe"]
+atlas = ExtResource("1_odtc2")
+region = Rect2(16, 0, 16, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ltyxv"]
+atlas = ExtResource("1_odtc2")
+region = Rect2(32, 0, 16, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alhpx"]
+atlas = ExtResource("1_odtc2")
+region = Rect2(48, 0, 16, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0jcdp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4wpqb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fqvfe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ltyxv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_alhpx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gotyk"]
+radius = 20.0
+height = 56.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gx1og"]
+
+[node name="Bomb" type="RigidBody2D"]
+z_index = 3
+collision_layer = 0
+collision_mask = 0
+gravity_scale = 0.0
+lock_rotation = true
+script = ExtResource("1_s6sop")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(14.5, 0)
+scale = Vector2(2.8125, 1)
+sprite_frames = SubResource("SpriteFrames_0jcdp")
+frame = 3
+frame_progress = 0.482237
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(16, 1)
+shape = SubResource("CapsuleShape2D_gotyk")
+
+[node name="Area2D_Bomb" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_Bomb"]
+position = Vector2(16, 1)
+shape = SubResource("CircleShape2D_gx1og")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="body_exited" from="Area2D_Bomb" to="." method="_on_area_2d_bomb_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
