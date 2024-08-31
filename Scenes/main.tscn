@@ -47,7 +47,7 @@ tile_map_data = PackedByteArray("AAAAAAAAAQAAAAAAAAABAAAAAQAAAAAAAAACAAAAAQAAAAA
 tile_set = SubResource("TileSet_uxcyp")
 
 [node name="Player" parent="." instance=ExtResource("4_5u1ts")]
-position = Vector2(25, 28)
+position = Vector2(215, 28)
 
 [node name="Player2" parent="." instance=ExtResource("5_4ptm2")]
-position = Vector2(213, 29)
+position = Vector2(24, 28)

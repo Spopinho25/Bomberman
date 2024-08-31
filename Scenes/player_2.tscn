@@ -187,17 +187,18 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d8ydw"]
-size = Vector2(18, 5)
+size = Vector2(13, 12.125)
 
-[node name="Player2" type="CharacterBody2D"]
+[node name="Player2" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_riuql")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -11)
 scale = Vector2(0.78125, 0.6875)
 sprite_frames = SubResource("SpriteFrames_weuee")
-animation = &"Down"
+animation = &"IdleDown"
+autoplay = "IdleDown"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -2)
+position = Vector2(0, -5.9375)
 shape = SubResource("RectangleShape2D_d8ydw")

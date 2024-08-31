@@ -1,31 +1,7 @@
 [gd_scene load_steps=25 format=3 uid="uid://bxpahars3cdn8"]
 
-[ext_resource type="Texture2D" path="res://Assets/sprites/$npc011.png" id="1_o71gc"]
-
-[sub_resource type="GDScript" id="GDScript_jlwtj"]
-script/source = "extends CharacterBody2D
-
-@export var speed: float = 100.0
-
-func phisics_process(delta: float) -> void:
-	var velocity = Vector2.ZERO
-
-	if Input.is_action_pressed(\"MoveRight\"):
-		$AnimatedSprite2D.play(\"Right\")
-		velocity.x += 1
-
-	if Input.is_action_pressed(\"MoveLeft\"):
-		$AnimatedSprite2D.play(\"Left\")
-		velocity.x -= 1
-	if Input.is_action_pressed(\"MoveDown\"):
-		$AnimatedSprite2D.play(\"Down\")
-		velocity.y += 1
-	if Input.is_action_pressed(\"MoveUp\"):
-		$AnimatedSprite2D.play(\"Up\")
-		velocity.y -= 1
-
-	velocity = velocity.normalized() * speed
-"
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_7dvtm"]
+[ext_resource type="Texture2D" uid="uid://f86vbcdfs728" path="res://Assets/sprites/Chracters/$npc011.png" id="1_o71gc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sff12"]
 atlas = ExtResource("1_o71gc")
@@ -211,19 +187,21 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1mgjm"]
-size = Vector2(17, 3.75)
+size = Vector2(13, 10.9688)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 collision_layer = 2
 collision_mask = 53
-script = SubResource("GDScript_jlwtj")
+script = ExtResource("1_7dvtm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_06u7b")
-animation = &"Down"
+animation = &"IdleDown"
+autoplay = "IdleDown"
+frame_progress = 0.796344
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, -2)
+position = Vector2(0, -5)
 shape = SubResource("RectangleShape2D_1mgjm")
