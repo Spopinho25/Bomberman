@@ -82,6 +82,8 @@ P2MoveDown={
 2d_physics/layer_5="bombPlayer"
 2d_physics/layer_6="bombEnemies"
 2d_physics/layer_7="bomb"
+2d_physics/layer_8="blockDestructible"
+2d_physics/layer_9="blockIndestructible"
 
 [rendering]
 

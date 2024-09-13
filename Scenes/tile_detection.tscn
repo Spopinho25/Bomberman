@@ -1,0 +1,336 @@
+[gd_scene load_steps=34 format=3 uid="uid://ot6cyys0prjk"]
+
+[ext_resource type="Script" path="res://Scripts/tile_detection.gd" id="1_w2feb"]
+[ext_resource type="Texture2D" uid="uid://ch3qchx3tp73l" path="res://Assets/sprites/Bomb/ExplosionStart64.png" id="2_36bfe"]
+[ext_resource type="Texture2D" uid="uid://df7hfyw5pd2r3" path="res://Assets/sprites/Bomb/ExplosionEnd64.png" id="3_vp1kf"]
+[ext_resource type="Texture2D" uid="uid://cl25xvwln08kf" path="res://Assets/sprites/Bomb/BrickDestroy64.png" id="4_c6xlm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7v2cy"]
+size = Vector2(64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3oqbg"]
+atlas = ExtResource("2_36bfe")
+region = Rect2(0, 0, 16, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpt5v"]
+atlas = ExtResource("2_36bfe")
+region = Rect2(16, 0, 16, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r6fp6"]
+atlas = ExtResource("2_36bfe")
+region = Rect2(32, 0, 16, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l1s3b"]
+atlas = ExtResource("2_36bfe")
+region = Rect2(48, 0, 16, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3hhkf"]
+atlas = ExtResource("2_36bfe")
+region = Rect2(64, 0, 16, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6yk1r"]
+atlas = ExtResource("2_36bfe")
+region = Rect2(80, 0, 16, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y15td"]
+atlas = ExtResource("2_36bfe")
+region = Rect2(96, 0, 16, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5hsab"]
+atlas = ExtResource("2_36bfe")
+region = Rect2(112, 0, 16, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_arlfr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3oqbg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xpt5v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r6fp6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l1s3b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3hhkf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6yk1r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y15td")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5hsab")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3mi6g"]
+size = Vector2(8, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_krrhc"]
+atlas = ExtResource("3_vp1kf")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dmxdh"]
+atlas = ExtResource("3_vp1kf")
+region = Rect2(32, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kv66s"]
+atlas = ExtResource("3_vp1kf")
+region = Rect2(64, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m74kb"]
+atlas = ExtResource("3_vp1kf")
+region = Rect2(96, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ewl51"]
+atlas = ExtResource("3_vp1kf")
+region = Rect2(128, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ibpgr"]
+atlas = ExtResource("3_vp1kf")
+region = Rect2(160, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hkya6"]
+atlas = ExtResource("3_vp1kf")
+region = Rect2(192, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b51rd"]
+atlas = ExtResource("3_vp1kf")
+region = Rect2(224, 0, 32, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u8qn3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_krrhc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dmxdh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kv66s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m74kb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ewl51")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ibpgr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hkya6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b51rd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xpvj"]
+atlas = ExtResource("4_c6xlm")
+region = Rect2(0, 0, 14, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_osavx"]
+atlas = ExtResource("4_c6xlm")
+region = Rect2(14, 0, 14, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xscys"]
+atlas = ExtResource("4_c6xlm")
+region = Rect2(28, 0, 14, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2enhk"]
+atlas = ExtResource("4_c6xlm")
+region = Rect2(42, 0, 14, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xs5rc"]
+atlas = ExtResource("4_c6xlm")
+region = Rect2(56, 0, 14, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s8shp"]
+atlas = ExtResource("4_c6xlm")
+region = Rect2(70, 0, 14, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0t7mm"]
+atlas = ExtResource("4_c6xlm")
+region = Rect2(84, 0, 14, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_plfkr"]
+atlas = ExtResource("4_c6xlm")
+region = Rect2(98, 0, 14, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mj3fq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3xpvj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_osavx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xscys")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2enhk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xs5rc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s8shp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0t7mm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_plfkr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="TileDetection" type="Area2D"]
+collision_layer = 0
+collision_mask = 385
+script = ExtResource("1_w2feb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_7v2cy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+scale = Vector2(4, 1)
+sprite_frames = SubResource("SpriteFrames_arlfr")
+autoplay = "default"
+frame_progress = 0.340353
+
+[node name="RightTile" type="Area2D" parent="."]
+position = Vector2(64, 0)
+scale = Vector2(4, 1)
+collision_layer = 0
+collision_mask = 385
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightTile"]
+position = Vector2(-4, 0)
+shape = SubResource("RectangleShape2D_3mi6g")
+
+[node name="RightExplosion" type="AnimatedSprite2D" parent="RightTile"]
+visible = false
+position = Vector2(-1.625, 1)
+scale = Vector2(0.382813, 1)
+sprite_frames = SubResource("SpriteFrames_u8qn3")
+autoplay = "default"
+frame = 1
+frame_progress = 0.841633
+
+[node name="RightTileExplosion" type="AnimatedSprite2D" parent="RightTile"]
+visible = false
+position = Vector2(-1.625, 1.43051e-06)
+scale = Vector2(0.803571, 1)
+sprite_frames = SubResource("SpriteFrames_mj3fq")
+autoplay = "default"
+
+[node name="LeftTile" type="Area2D" parent="."]
+position = Vector2(-64, 0)
+scale = Vector2(4, 1)
+collision_layer = 0
+collision_mask = 385
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftTile"]
+position = Vector2(4, 0)
+shape = SubResource("RectangleShape2D_3mi6g")
+
+[node name="LeftExplosion" type="AnimatedSprite2D" parent="LeftTile"]
+visible = false
+position = Vector2(0.962549, 1)
+rotation = 3.14159
+scale = Vector2(0.432028, 1)
+sprite_frames = SubResource("SpriteFrames_u8qn3")
+autoplay = "default"
+frame = 1
+frame_progress = 0.841633
+
+[node name="LeftTileExplosion" type="AnimatedSprite2D" parent="LeftTile"]
+visible = false
+position = Vector2(0.75, 1.43051e-06)
+scale = Vector2(0.928571, 1)
+sprite_frames = SubResource("SpriteFrames_mj3fq")
+autoplay = "default"
+
+[node name="UpTile" type="Area2D" parent="."]
+scale = Vector2(4, 1)
+collision_layer = 0
+collision_mask = 385
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UpTile"]
+position = Vector2(0, -48)
+shape = SubResource("RectangleShape2D_3mi6g")
+
+[node name="UpExplosion" type="AnimatedSprite2D" parent="UpTile"]
+visible = false
+position = Vector2(0.0450478, -48.7782)
+rotation = -1.5708
+scale = Vector2(0.918164, 0.124403)
+sprite_frames = SubResource("SpriteFrames_u8qn3")
+autoplay = "default"
+frame = 1
+frame_progress = 0.841633
+
+[node name="UpTileExplosion" type="AnimatedSprite2D" parent="UpTile"]
+visible = false
+position = Vector2(1.2666e-07, -48)
+scale = Vector2(0.571429, 0.40625)
+sprite_frames = SubResource("SpriteFrames_mj3fq")
+autoplay = "default"
+
+[node name="DownTile" type="Area2D" parent="."]
+position = Vector2(0, 64)
+scale = Vector2(4, 1)
+collision_layer = 0
+collision_mask = 385
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DownTile"]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_3mi6g")
+
+[node name="DownExplosion" type="AnimatedSprite2D" parent="DownTile"]
+visible = false
+position = Vector2(2.98023e-08, -5.6479)
+rotation = 1.5708
+scale = Vector2(1.62767, 0.252508)
+sprite_frames = SubResource("SpriteFrames_u8qn3")
+autoplay = "default"
+frame = 1
+frame_progress = 0.841633
+
+[node name="DownTileExplosion" type="AnimatedSprite2D" parent="DownTile"]
+visible = false
+position = Vector2(0.125, -2.5)
+scale = Vector2(1.125, 0.859375)
+sprite_frames = SubResource("SpriteFrames_mj3fq")
+autoplay = "default"
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="area_entered" from="RightTile" to="." method="_on_right_tile_area_entered"]
+[connection signal="body_entered" from="RightTile" to="." method="_on_right_tile_body_entered"]
+[connection signal="area_entered" from="LeftTile" to="." method="_on_left_tile_area_entered"]
+[connection signal="body_entered" from="LeftTile" to="." method="_on_left_tile_body_entered"]
+[connection signal="area_entered" from="UpTile" to="." method="_on_up_tile_area_entered"]
+[connection signal="body_entered" from="UpTile" to="." method="_on_up_tile_body_entered"]
+[connection signal="area_entered" from="DownTile" to="." method="_on_down_tile_area_entered"]
+[connection signal="body_entered" from="DownTile" to="." method="_on_down_tile_body_entered"]

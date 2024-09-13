@@ -11,6 +11,7 @@ size = Vector2(16, 16)
 
 [node name="DesctructibleBlock" type="StaticBody2D" groups=["desctructibleBlock"]]
 position = Vector2(-6, -6)
+collision_layer = 129
 collision_mask = 58
 script = ExtResource("1_wpo0r")
 
@@ -23,6 +24,7 @@ position = Vector2(14, 14)
 texture = ExtResource("1_qh1nw")
 
 [node name="Area2D_DB" type="Area2D" parent="."]
+collision_layer = 129
 
 [node name="CollisionDB" type="CollisionShape2D" parent="Area2D_DB"]
 position = Vector2(14, 14)
