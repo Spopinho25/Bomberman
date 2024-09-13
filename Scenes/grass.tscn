@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfirqwjwgjqyl"]
+
+[ext_resource type="Script" path="res://Scripts/grass.gd" id="1_0f356"]
+[ext_resource type="Texture2D" uid="uid://dk0fnnlnp4x70" path="res://Assets/Block/Spr_Chao.png" id="1_flhn0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1oyoi"]
+size = Vector2(16, 16)
+
+[node name="Grass" type="Area2D"]
+script = ExtResource("1_0f356")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1oyoi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_flhn0")

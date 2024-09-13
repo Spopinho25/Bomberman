@@ -1,0 +1,1248 @@
+[gd_scene load_steps=4 format=3 uid="uid://cp3febi0h1vci"]
+
+[ext_resource type="PackedScene" uid="uid://3limiesggoar" path="res://Scenes/indestructible_block.tscn" id="1_hj0sg"]
+[ext_resource type="PackedScene" uid="uid://dfirqwjwgjqyl" path="res://Scenes/grass.tscn" id="2_bwcer"]
+[ext_resource type="PackedScene" uid="uid://bwxd2vomhhl0d" path="res://Scenes/desctructible_block.tscn" id="3_mmy8a"]
+
+[node name="LevelDesign" type="Node2D"]
+
+[node name="BackGround" type="Node2D" parent="."]
+
+[node name="Grass" type="Node2D" parent="BackGround"]
+
+[node name="Grass" parent="BackGround/Grass" instance=ExtResource("2_bwcer")]
+position = Vector2(24, 24)
+
+[node name="Grass2" parent="BackGround/Grass" instance=ExtResource("2_bwcer")]
+position = Vector2(40, 24)
+
+[node name="Grass3" parent="BackGround/Grass" instance=ExtResource("2_bwcer")]
+position = Vector2(56, 24)
+
+[node name="Grass4" parent="BackGround/Grass" instance=ExtResource("2_bwcer")]
+position = Vector2(72, 24)
+
+[node name="Grass5" parent="BackGround/Grass" instance=ExtResource("2_bwcer")]
+position = Vector2(88, 24)
+
+[node name="Grass6" parent="BackGround/Grass" instance=ExtResource("2_bwcer")]
+position = Vector2(104, 24)
+
+[node name="Grass7" parent="BackGround/Grass" instance=ExtResource("2_bwcer")]
+position = Vector2(120, 24)
+
+[node name="Grass8" parent="BackGround/Grass" instance=ExtResource("2_bwcer")]
+position = Vector2(136, 24)
+
+[node name="Grass9" parent="BackGround/Grass" instance=ExtResource("2_bwcer")]
+position = Vector2(152, 24)
+
+[node name="Grass10" parent="BackGround/Grass" instance=ExtResource("2_bwcer")]
+position = Vector2(168, 24)
+
+[node name="Grass11" parent="BackGround/Grass" instance=ExtResource("2_bwcer")]
+position = Vector2(184, 24)
+
+[node name="Grass12" parent="BackGround/Grass" instance=ExtResource("2_bwcer")]
+position = Vector2(200, 24)
+
+[node name="Grass13" parent="BackGround/Grass" instance=ExtResource("2_bwcer")]
+position = Vector2(216, 24)
+
+[node name="Grass2" type="Node2D" parent="BackGround"]
+
+[node name="Grass" parent="BackGround/Grass2" instance=ExtResource("2_bwcer")]
+position = Vector2(24, 40)
+
+[node name="Grass2" parent="BackGround/Grass2" instance=ExtResource("2_bwcer")]
+position = Vector2(40, 40)
+
+[node name="Grass3" parent="BackGround/Grass2" instance=ExtResource("2_bwcer")]
+position = Vector2(56, 40)
+
+[node name="Grass4" parent="BackGround/Grass2" instance=ExtResource("2_bwcer")]
+position = Vector2(72, 40)
+
+[node name="Grass5" parent="BackGround/Grass2" instance=ExtResource("2_bwcer")]
+position = Vector2(88, 40)
+
+[node name="Grass6" parent="BackGround/Grass2" instance=ExtResource("2_bwcer")]
+position = Vector2(104, 40)
+
+[node name="Grass7" parent="BackGround/Grass2" instance=ExtResource("2_bwcer")]
+position = Vector2(120, 40)
+
+[node name="Grass8" parent="BackGround/Grass2" instance=ExtResource("2_bwcer")]
+position = Vector2(136, 40)
+
+[node name="Grass9" parent="BackGround/Grass2" instance=ExtResource("2_bwcer")]
+position = Vector2(152, 40)
+
+[node name="Grass10" parent="BackGround/Grass2" instance=ExtResource("2_bwcer")]
+position = Vector2(168, 40)
+
+[node name="Grass11" parent="BackGround/Grass2" instance=ExtResource("2_bwcer")]
+position = Vector2(184, 40)
+
+[node name="Grass12" parent="BackGround/Grass2" instance=ExtResource("2_bwcer")]
+position = Vector2(200, 40)
+
+[node name="Grass13" parent="BackGround/Grass2" instance=ExtResource("2_bwcer")]
+position = Vector2(216, 40)
+
+[node name="Grass3" type="Node2D" parent="BackGround"]
+
+[node name="Grass" parent="BackGround/Grass3" instance=ExtResource("2_bwcer")]
+position = Vector2(24, 56)
+
+[node name="Grass2" parent="BackGround/Grass3" instance=ExtResource("2_bwcer")]
+position = Vector2(40, 56)
+
+[node name="Grass3" parent="BackGround/Grass3" instance=ExtResource("2_bwcer")]
+position = Vector2(56, 56)
+
+[node name="Grass4" parent="BackGround/Grass3" instance=ExtResource("2_bwcer")]
+position = Vector2(72, 56)
+
+[node name="Grass5" parent="BackGround/Grass3" instance=ExtResource("2_bwcer")]
+position = Vector2(88, 56)
+
+[node name="Grass6" parent="BackGround/Grass3" instance=ExtResource("2_bwcer")]
+position = Vector2(104, 56)
+
+[node name="Grass7" parent="BackGround/Grass3" instance=ExtResource("2_bwcer")]
+position = Vector2(120, 56)
+
+[node name="Grass8" parent="BackGround/Grass3" instance=ExtResource("2_bwcer")]
+position = Vector2(136, 56)
+
+[node name="Grass9" parent="BackGround/Grass3" instance=ExtResource("2_bwcer")]
+position = Vector2(152, 56)
+
+[node name="Grass10" parent="BackGround/Grass3" instance=ExtResource("2_bwcer")]
+position = Vector2(168, 56)
+
+[node name="Grass11" parent="BackGround/Grass3" instance=ExtResource("2_bwcer")]
+position = Vector2(184, 56)
+
+[node name="Grass12" parent="BackGround/Grass3" instance=ExtResource("2_bwcer")]
+position = Vector2(200, 56)
+
+[node name="Grass13" parent="BackGround/Grass3" instance=ExtResource("2_bwcer")]
+position = Vector2(216, 56)
+
+[node name="Grass4" type="Node2D" parent="BackGround"]
+
+[node name="Grass" parent="BackGround/Grass4" instance=ExtResource("2_bwcer")]
+position = Vector2(24, 72)
+
+[node name="Grass2" parent="BackGround/Grass4" instance=ExtResource("2_bwcer")]
+position = Vector2(40, 72)
+
+[node name="Grass3" parent="BackGround/Grass4" instance=ExtResource("2_bwcer")]
+position = Vector2(56, 72)
+
+[node name="Grass4" parent="BackGround/Grass4" instance=ExtResource("2_bwcer")]
+position = Vector2(72, 72)
+
+[node name="Grass5" parent="BackGround/Grass4" instance=ExtResource("2_bwcer")]
+position = Vector2(88, 72)
+
+[node name="Grass6" parent="BackGround/Grass4" instance=ExtResource("2_bwcer")]
+position = Vector2(104, 72)
+
+[node name="Grass7" parent="BackGround/Grass4" instance=ExtResource("2_bwcer")]
+position = Vector2(120, 72)
+
+[node name="Grass8" parent="BackGround/Grass4" instance=ExtResource("2_bwcer")]
+position = Vector2(136, 72)
+
+[node name="Grass9" parent="BackGround/Grass4" instance=ExtResource("2_bwcer")]
+position = Vector2(152, 72)
+
+[node name="Grass10" parent="BackGround/Grass4" instance=ExtResource("2_bwcer")]
+position = Vector2(168, 72)
+
+[node name="Grass11" parent="BackGround/Grass4" instance=ExtResource("2_bwcer")]
+position = Vector2(184, 72)
+
+[node name="Grass12" parent="BackGround/Grass4" instance=ExtResource("2_bwcer")]
+position = Vector2(200, 72)
+
+[node name="Grass13" parent="BackGround/Grass4" instance=ExtResource("2_bwcer")]
+position = Vector2(216, 72)
+
+[node name="Grass5" type="Node2D" parent="BackGround"]
+position = Vector2(0, 16)
+
+[node name="Grass" parent="BackGround/Grass5" instance=ExtResource("2_bwcer")]
+position = Vector2(24, 72)
+
+[node name="Grass2" parent="BackGround/Grass5" instance=ExtResource("2_bwcer")]
+position = Vector2(40, 72)
+
+[node name="Grass3" parent="BackGround/Grass5" instance=ExtResource("2_bwcer")]
+position = Vector2(56, 72)
+
+[node name="Grass4" parent="BackGround/Grass5" instance=ExtResource("2_bwcer")]
+position = Vector2(72, 72)
+
+[node name="Grass5" parent="BackGround/Grass5" instance=ExtResource("2_bwcer")]
+position = Vector2(88, 72)
+
+[node name="Grass6" parent="BackGround/Grass5" instance=ExtResource("2_bwcer")]
+position = Vector2(104, 72)
+
+[node name="Grass7" parent="BackGround/Grass5" instance=ExtResource("2_bwcer")]
+position = Vector2(120, 72)
+
+[node name="Grass8" parent="BackGround/Grass5" instance=ExtResource("2_bwcer")]
+position = Vector2(136, 72)
+
+[node name="Grass9" parent="BackGround/Grass5" instance=ExtResource("2_bwcer")]
+position = Vector2(152, 72)
+
+[node name="Grass10" parent="BackGround/Grass5" instance=ExtResource("2_bwcer")]
+position = Vector2(168, 72)
+
+[node name="Grass11" parent="BackGround/Grass5" instance=ExtResource("2_bwcer")]
+position = Vector2(184, 72)
+
+[node name="Grass12" parent="BackGround/Grass5" instance=ExtResource("2_bwcer")]
+position = Vector2(200, 72)
+
+[node name="Grass13" parent="BackGround/Grass5" instance=ExtResource("2_bwcer")]
+position = Vector2(216, 72)
+
+[node name="Grass6" type="Node2D" parent="BackGround"]
+position = Vector2(0, 32)
+
+[node name="Grass" parent="BackGround/Grass6" instance=ExtResource("2_bwcer")]
+position = Vector2(24, 72)
+
+[node name="Grass2" parent="BackGround/Grass6" instance=ExtResource("2_bwcer")]
+position = Vector2(40, 72)
+
+[node name="Grass3" parent="BackGround/Grass6" instance=ExtResource("2_bwcer")]
+position = Vector2(56, 72)
+
+[node name="Grass4" parent="BackGround/Grass6" instance=ExtResource("2_bwcer")]
+position = Vector2(72, 72)
+
+[node name="Grass5" parent="BackGround/Grass6" instance=ExtResource("2_bwcer")]
+position = Vector2(88, 72)
+
+[node name="Grass6" parent="BackGround/Grass6" instance=ExtResource("2_bwcer")]
+position = Vector2(104, 72)
+
+[node name="Grass7" parent="BackGround/Grass6" instance=ExtResource("2_bwcer")]
+position = Vector2(120, 72)
+
+[node name="Grass8" parent="BackGround/Grass6" instance=ExtResource("2_bwcer")]
+position = Vector2(136, 72)
+
+[node name="Grass9" parent="BackGround/Grass6" instance=ExtResource("2_bwcer")]
+position = Vector2(152, 72)
+
+[node name="Grass10" parent="BackGround/Grass6" instance=ExtResource("2_bwcer")]
+position = Vector2(168, 72)
+
+[node name="Grass11" parent="BackGround/Grass6" instance=ExtResource("2_bwcer")]
+position = Vector2(184, 72)
+
+[node name="Grass12" parent="BackGround/Grass6" instance=ExtResource("2_bwcer")]
+position = Vector2(200, 72)
+
+[node name="Grass13" parent="BackGround/Grass6" instance=ExtResource("2_bwcer")]
+position = Vector2(216, 72)
+
+[node name="Grass7" type="Node2D" parent="BackGround"]
+
+[node name="Grass" parent="BackGround/Grass7" instance=ExtResource("2_bwcer")]
+position = Vector2(24, 120)
+
+[node name="Grass2" parent="BackGround/Grass7" instance=ExtResource("2_bwcer")]
+position = Vector2(40, 120)
+
+[node name="Grass3" parent="BackGround/Grass7" instance=ExtResource("2_bwcer")]
+position = Vector2(56, 120)
+
+[node name="Grass4" parent="BackGround/Grass7" instance=ExtResource("2_bwcer")]
+position = Vector2(72, 120)
+
+[node name="Grass5" parent="BackGround/Grass7" instance=ExtResource("2_bwcer")]
+position = Vector2(88, 120)
+
+[node name="Grass6" parent="BackGround/Grass7" instance=ExtResource("2_bwcer")]
+position = Vector2(104, 120)
+
+[node name="Grass7" parent="BackGround/Grass7" instance=ExtResource("2_bwcer")]
+position = Vector2(120, 120)
+
+[node name="Grass8" parent="BackGround/Grass7" instance=ExtResource("2_bwcer")]
+position = Vector2(136, 120)
+
+[node name="Grass9" parent="BackGround/Grass7" instance=ExtResource("2_bwcer")]
+position = Vector2(152, 120)
+
+[node name="Grass10" parent="BackGround/Grass7" instance=ExtResource("2_bwcer")]
+position = Vector2(168, 120)
+
+[node name="Grass11" parent="BackGround/Grass7" instance=ExtResource("2_bwcer")]
+position = Vector2(184, 120)
+
+[node name="Grass12" parent="BackGround/Grass7" instance=ExtResource("2_bwcer")]
+position = Vector2(200, 120)
+
+[node name="Grass13" parent="BackGround/Grass7" instance=ExtResource("2_bwcer")]
+position = Vector2(216, 120)
+
+[node name="Grass8" type="Node2D" parent="BackGround"]
+
+[node name="Grass" parent="BackGround/Grass8" instance=ExtResource("2_bwcer")]
+position = Vector2(24, 136)
+
+[node name="Grass2" parent="BackGround/Grass8" instance=ExtResource("2_bwcer")]
+position = Vector2(40, 136)
+
+[node name="Grass3" parent="BackGround/Grass8" instance=ExtResource("2_bwcer")]
+position = Vector2(56, 136)
+
+[node name="Grass4" parent="BackGround/Grass8" instance=ExtResource("2_bwcer")]
+position = Vector2(72, 136)
+
+[node name="Grass5" parent="BackGround/Grass8" instance=ExtResource("2_bwcer")]
+position = Vector2(88, 136)
+
+[node name="Grass6" parent="BackGround/Grass8" instance=ExtResource("2_bwcer")]
+position = Vector2(104, 136)
+
+[node name="Grass7" parent="BackGround/Grass8" instance=ExtResource("2_bwcer")]
+position = Vector2(120, 136)
+
+[node name="Grass8" parent="BackGround/Grass8" instance=ExtResource("2_bwcer")]
+position = Vector2(136, 136)
+
+[node name="Grass9" parent="BackGround/Grass8" instance=ExtResource("2_bwcer")]
+position = Vector2(152, 136)
+
+[node name="Grass10" parent="BackGround/Grass8" instance=ExtResource("2_bwcer")]
+position = Vector2(168, 136)
+
+[node name="Grass11" parent="BackGround/Grass8" instance=ExtResource("2_bwcer")]
+position = Vector2(184, 136)
+
+[node name="Grass12" parent="BackGround/Grass8" instance=ExtResource("2_bwcer")]
+position = Vector2(200, 136)
+
+[node name="Grass13" parent="BackGround/Grass8" instance=ExtResource("2_bwcer")]
+position = Vector2(216, 136)
+
+[node name="Grass9" type="Node2D" parent="BackGround"]
+
+[node name="Grass" parent="BackGround/Grass9" instance=ExtResource("2_bwcer")]
+position = Vector2(24, 152)
+
+[node name="Grass2" parent="BackGround/Grass9" instance=ExtResource("2_bwcer")]
+position = Vector2(40, 152)
+
+[node name="Grass3" parent="BackGround/Grass9" instance=ExtResource("2_bwcer")]
+position = Vector2(56, 152)
+
+[node name="Grass4" parent="BackGround/Grass9" instance=ExtResource("2_bwcer")]
+position = Vector2(72, 152)
+
+[node name="Grass5" parent="BackGround/Grass9" instance=ExtResource("2_bwcer")]
+position = Vector2(88, 152)
+
+[node name="Grass6" parent="BackGround/Grass9" instance=ExtResource("2_bwcer")]
+position = Vector2(104, 152)
+
+[node name="Grass7" parent="BackGround/Grass9" instance=ExtResource("2_bwcer")]
+position = Vector2(120, 152)
+
+[node name="Grass8" parent="BackGround/Grass9" instance=ExtResource("2_bwcer")]
+position = Vector2(136, 152)
+
+[node name="Grass9" parent="BackGround/Grass9" instance=ExtResource("2_bwcer")]
+position = Vector2(152, 152)
+
+[node name="Grass10" parent="BackGround/Grass9" instance=ExtResource("2_bwcer")]
+position = Vector2(168, 152)
+
+[node name="Grass11" parent="BackGround/Grass9" instance=ExtResource("2_bwcer")]
+position = Vector2(184, 152)
+
+[node name="Grass12" parent="BackGround/Grass9" instance=ExtResource("2_bwcer")]
+position = Vector2(200, 152)
+
+[node name="Grass13" parent="BackGround/Grass9" instance=ExtResource("2_bwcer")]
+position = Vector2(216, 152)
+
+[node name="Grass10" type="Node2D" parent="BackGround"]
+
+[node name="Grass" parent="BackGround/Grass10" instance=ExtResource("2_bwcer")]
+position = Vector2(24, 168)
+
+[node name="Grass2" parent="BackGround/Grass10" instance=ExtResource("2_bwcer")]
+position = Vector2(40, 168)
+
+[node name="Grass3" parent="BackGround/Grass10" instance=ExtResource("2_bwcer")]
+position = Vector2(56, 168)
+
+[node name="Grass4" parent="BackGround/Grass10" instance=ExtResource("2_bwcer")]
+position = Vector2(72, 168)
+
+[node name="Grass5" parent="BackGround/Grass10" instance=ExtResource("2_bwcer")]
+position = Vector2(88, 168)
+
+[node name="Grass6" parent="BackGround/Grass10" instance=ExtResource("2_bwcer")]
+position = Vector2(104, 168)
+
+[node name="Grass7" parent="BackGround/Grass10" instance=ExtResource("2_bwcer")]
+position = Vector2(120, 168)
+
+[node name="Grass8" parent="BackGround/Grass10" instance=ExtResource("2_bwcer")]
+position = Vector2(136, 168)
+
+[node name="Grass9" parent="BackGround/Grass10" instance=ExtResource("2_bwcer")]
+position = Vector2(152, 168)
+
+[node name="Grass10" parent="BackGround/Grass10" instance=ExtResource("2_bwcer")]
+position = Vector2(168, 168)
+
+[node name="Grass11" parent="BackGround/Grass10" instance=ExtResource("2_bwcer")]
+position = Vector2(184, 168)
+
+[node name="Grass12" parent="BackGround/Grass10" instance=ExtResource("2_bwcer")]
+position = Vector2(200, 168)
+
+[node name="Grass13" parent="BackGround/Grass10" instance=ExtResource("2_bwcer")]
+position = Vector2(216, 168)
+
+[node name="Grass11" type="Node2D" parent="BackGround"]
+
+[node name="Grass" parent="BackGround/Grass11" instance=ExtResource("2_bwcer")]
+position = Vector2(24, 184)
+
+[node name="Grass2" parent="BackGround/Grass11" instance=ExtResource("2_bwcer")]
+position = Vector2(40, 184)
+
+[node name="Grass3" parent="BackGround/Grass11" instance=ExtResource("2_bwcer")]
+position = Vector2(56, 184)
+
+[node name="Grass4" parent="BackGround/Grass11" instance=ExtResource("2_bwcer")]
+position = Vector2(72, 184)
+
+[node name="Grass5" parent="BackGround/Grass11" instance=ExtResource("2_bwcer")]
+position = Vector2(88, 184)
+
+[node name="Grass6" parent="BackGround/Grass11" instance=ExtResource("2_bwcer")]
+position = Vector2(104, 184)
+
+[node name="Grass7" parent="BackGround/Grass11" instance=ExtResource("2_bwcer")]
+position = Vector2(120, 184)
+
+[node name="Grass8" parent="BackGround/Grass11" instance=ExtResource("2_bwcer")]
+position = Vector2(136, 184)
+
+[node name="Grass9" parent="BackGround/Grass11" instance=ExtResource("2_bwcer")]
+position = Vector2(152, 184)
+
+[node name="Grass10" parent="BackGround/Grass11" instance=ExtResource("2_bwcer")]
+position = Vector2(168, 184)
+
+[node name="Grass11" parent="BackGround/Grass11" instance=ExtResource("2_bwcer")]
+position = Vector2(184, 184)
+
+[node name="Grass12" parent="BackGround/Grass11" instance=ExtResource("2_bwcer")]
+position = Vector2(200, 184)
+
+[node name="Grass13" parent="BackGround/Grass11" instance=ExtResource("2_bwcer")]
+position = Vector2(216, 184)
+
+[node name="Grass12" type="Node2D" parent="BackGround"]
+
+[node name="Grass" parent="BackGround/Grass12" instance=ExtResource("2_bwcer")]
+position = Vector2(24, 200)
+
+[node name="Grass2" parent="BackGround/Grass12" instance=ExtResource("2_bwcer")]
+position = Vector2(40, 200)
+
+[node name="Grass3" parent="BackGround/Grass12" instance=ExtResource("2_bwcer")]
+position = Vector2(56, 200)
+
+[node name="Grass4" parent="BackGround/Grass12" instance=ExtResource("2_bwcer")]
+position = Vector2(72, 200)
+
+[node name="Grass5" parent="BackGround/Grass12" instance=ExtResource("2_bwcer")]
+position = Vector2(88, 200)
+
+[node name="Grass6" parent="BackGround/Grass12" instance=ExtResource("2_bwcer")]
+position = Vector2(104, 200)
+
+[node name="Grass7" parent="BackGround/Grass12" instance=ExtResource("2_bwcer")]
+position = Vector2(120, 200)
+
+[node name="Grass8" parent="BackGround/Grass12" instance=ExtResource("2_bwcer")]
+position = Vector2(136, 200)
+
+[node name="Grass9" parent="BackGround/Grass12" instance=ExtResource("2_bwcer")]
+position = Vector2(152, 200)
+
+[node name="Grass10" parent="BackGround/Grass12" instance=ExtResource("2_bwcer")]
+position = Vector2(168, 200)
+
+[node name="Grass11" parent="BackGround/Grass12" instance=ExtResource("2_bwcer")]
+position = Vector2(184, 200)
+
+[node name="Grass12" parent="BackGround/Grass12" instance=ExtResource("2_bwcer")]
+position = Vector2(200, 200)
+
+[node name="Grass13" parent="BackGround/Grass12" instance=ExtResource("2_bwcer")]
+position = Vector2(216, 200)
+
+[node name="Grass13" type="Node2D" parent="BackGround"]
+
+[node name="Grass" parent="BackGround/Grass13" instance=ExtResource("2_bwcer")]
+position = Vector2(24, 216)
+
+[node name="Grass2" parent="BackGround/Grass13" instance=ExtResource("2_bwcer")]
+position = Vector2(40, 216)
+
+[node name="Grass3" parent="BackGround/Grass13" instance=ExtResource("2_bwcer")]
+position = Vector2(56, 216)
+
+[node name="Grass4" parent="BackGround/Grass13" instance=ExtResource("2_bwcer")]
+position = Vector2(72, 216)
+
+[node name="Grass5" parent="BackGround/Grass13" instance=ExtResource("2_bwcer")]
+position = Vector2(88, 216)
+
+[node name="Grass6" parent="BackGround/Grass13" instance=ExtResource("2_bwcer")]
+position = Vector2(104, 216)
+
+[node name="Grass7" parent="BackGround/Grass13" instance=ExtResource("2_bwcer")]
+position = Vector2(120, 216)
+
+[node name="Grass8" parent="BackGround/Grass13" instance=ExtResource("2_bwcer")]
+position = Vector2(136, 216)
+
+[node name="Grass9" parent="BackGround/Grass13" instance=ExtResource("2_bwcer")]
+position = Vector2(152, 216)
+
+[node name="Grass10" parent="BackGround/Grass13" instance=ExtResource("2_bwcer")]
+position = Vector2(168, 216)
+
+[node name="Grass11" parent="BackGround/Grass13" instance=ExtResource("2_bwcer")]
+position = Vector2(184, 216)
+
+[node name="Grass12" parent="BackGround/Grass13" instance=ExtResource("2_bwcer")]
+position = Vector2(200, 216)
+
+[node name="Grass13" parent="BackGround/Grass13" instance=ExtResource("2_bwcer")]
+position = Vector2(216, 216)
+
+[node name="IndestructibleWalls" type="Node2D" parent="."]
+
+[node name="Walls" type="Node2D" parent="IndestructibleWalls"]
+
+[node name="BottomWall" type="Node2D" parent="IndestructibleWalls/Walls"]
+
+[node name="indestructibleBlock" parent="IndestructibleWalls/Walls/BottomWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(16, 224)
+
+[node name="indestructibleBlock2" parent="IndestructibleWalls/Walls/BottomWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(32, 224)
+
+[node name="indestructibleBlock3" parent="IndestructibleWalls/Walls/BottomWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(48, 224)
+
+[node name="indestructibleBlock4" parent="IndestructibleWalls/Walls/BottomWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(64, 224)
+
+[node name="indestructibleBlock5" parent="IndestructibleWalls/Walls/BottomWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(80, 224)
+
+[node name="indestructibleBlock6" parent="IndestructibleWalls/Walls/BottomWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(96, 224)
+
+[node name="indestructibleBlock7" parent="IndestructibleWalls/Walls/BottomWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(112, 224)
+
+[node name="indestructibleBlock8" parent="IndestructibleWalls/Walls/BottomWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(128, 224)
+
+[node name="indestructibleBlock9" parent="IndestructibleWalls/Walls/BottomWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(144, 224)
+
+[node name="indestructibleBlock10" parent="IndestructibleWalls/Walls/BottomWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(160, 224)
+
+[node name="indestructibleBlock11" parent="IndestructibleWalls/Walls/BottomWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(176, 224)
+
+[node name="indestructibleBlock12" parent="IndestructibleWalls/Walls/BottomWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(192, 224)
+
+[node name="indestructibleBlock13" parent="IndestructibleWalls/Walls/BottomWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(208, 224)
+
+[node name="TopWall" type="Node2D" parent="IndestructibleWalls/Walls"]
+
+[node name="indestructibleBlock" parent="IndestructibleWalls/Walls/TopWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(16, 0)
+
+[node name="indestructibleBlock2" parent="IndestructibleWalls/Walls/TopWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(32, 0)
+
+[node name="indestructibleBlock3" parent="IndestructibleWalls/Walls/TopWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(48, 0)
+
+[node name="indestructibleBlock4" parent="IndestructibleWalls/Walls/TopWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(64, 0)
+
+[node name="indestructibleBlock5" parent="IndestructibleWalls/Walls/TopWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(80, 0)
+
+[node name="indestructibleBlock6" parent="IndestructibleWalls/Walls/TopWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(96, 0)
+
+[node name="indestructibleBlock7" parent="IndestructibleWalls/Walls/TopWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(112, 0)
+
+[node name="indestructibleBlock8" parent="IndestructibleWalls/Walls/TopWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(128, 0)
+
+[node name="indestructibleBlock9" parent="IndestructibleWalls/Walls/TopWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(144, 0)
+
+[node name="indestructibleBlock10" parent="IndestructibleWalls/Walls/TopWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(160, 0)
+
+[node name="indestructibleBlock11" parent="IndestructibleWalls/Walls/TopWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(176, 0)
+
+[node name="indestructibleBlock12" parent="IndestructibleWalls/Walls/TopWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(192, 0)
+
+[node name="indestructibleBlock13" parent="IndestructibleWalls/Walls/TopWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(208, 0)
+
+[node name="LeftWall" type="Node2D" parent="IndestructibleWalls/Walls"]
+
+[node name="indestructibleBlock" parent="IndestructibleWalls/Walls/LeftWall" instance=ExtResource("1_hj0sg")]
+
+[node name="indestructibleBlock2" parent="IndestructibleWalls/Walls/LeftWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(0, 16)
+
+[node name="indestructibleBlock3" parent="IndestructibleWalls/Walls/LeftWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(0, 32)
+
+[node name="indestructibleBlock4" parent="IndestructibleWalls/Walls/LeftWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(0, 48)
+
+[node name="indestructibleBlock5" parent="IndestructibleWalls/Walls/LeftWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(0, 64)
+
+[node name="indestructibleBlock6" parent="IndestructibleWalls/Walls/LeftWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(0, 80)
+
+[node name="indestructibleBlock7" parent="IndestructibleWalls/Walls/LeftWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(0, 96)
+
+[node name="indestructibleBlock8" parent="IndestructibleWalls/Walls/LeftWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(0, 112)
+
+[node name="indestructibleBlock9" parent="IndestructibleWalls/Walls/LeftWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(0, 128)
+
+[node name="indestructibleBlock10" parent="IndestructibleWalls/Walls/LeftWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(0, 144)
+
+[node name="indestructibleBlock11" parent="IndestructibleWalls/Walls/LeftWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(0, 160)
+
+[node name="indestructibleBlock12" parent="IndestructibleWalls/Walls/LeftWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(0, 176)
+
+[node name="indestructibleBlock13" parent="IndestructibleWalls/Walls/LeftWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(0, 192)
+
+[node name="indestructibleBlock14" parent="IndestructibleWalls/Walls/LeftWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(0, 208)
+
+[node name="indestructibleBlock15" parent="IndestructibleWalls/Walls/LeftWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(0, 224)
+
+[node name="RightWall" type="Node2D" parent="IndestructibleWalls/Walls"]
+
+[node name="indestructibleBlock" parent="IndestructibleWalls/Walls/RightWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(224, 0)
+
+[node name="indestructibleBlock2" parent="IndestructibleWalls/Walls/RightWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(224, 16)
+
+[node name="indestructibleBlock3" parent="IndestructibleWalls/Walls/RightWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(224, 32)
+
+[node name="indestructibleBlock4" parent="IndestructibleWalls/Walls/RightWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(224, 48)
+
+[node name="indestructibleBlock5" parent="IndestructibleWalls/Walls/RightWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(224, 64)
+
+[node name="indestructibleBlock6" parent="IndestructibleWalls/Walls/RightWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(224, 80)
+
+[node name="indestructibleBlock7" parent="IndestructibleWalls/Walls/RightWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(224, 96)
+
+[node name="indestructibleBlock8" parent="IndestructibleWalls/Walls/RightWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(224, 112)
+
+[node name="indestructibleBlock9" parent="IndestructibleWalls/Walls/RightWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(224, 128)
+
+[node name="indestructibleBlock10" parent="IndestructibleWalls/Walls/RightWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(224, 144)
+
+[node name="indestructibleBlock11" parent="IndestructibleWalls/Walls/RightWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(224, 160)
+
+[node name="indestructibleBlock12" parent="IndestructibleWalls/Walls/RightWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(224, 176)
+
+[node name="indestructibleBlock13" parent="IndestructibleWalls/Walls/RightWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(224, 192)
+
+[node name="indestructibleBlock14" parent="IndestructibleWalls/Walls/RightWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(224, 208)
+
+[node name="indestructibleBlock15" parent="IndestructibleWalls/Walls/RightWall" instance=ExtResource("1_hj0sg")]
+position = Vector2(224, 224)
+
+[node name="InsideWalls" type="Node2D" parent="IndestructibleWalls"]
+
+[node name="Line1" type="Node2D" parent="IndestructibleWalls/InsideWalls"]
+
+[node name="indestructibleBlock" parent="IndestructibleWalls/InsideWalls/Line1" instance=ExtResource("1_hj0sg")]
+position = Vector2(32, 32)
+
+[node name="indestructibleBlock2" parent="IndestructibleWalls/InsideWalls/Line1" instance=ExtResource("1_hj0sg")]
+position = Vector2(64, 32)
+
+[node name="indestructibleBlock4" parent="IndestructibleWalls/InsideWalls/Line1" instance=ExtResource("1_hj0sg")]
+position = Vector2(96, 32)
+
+[node name="indestructibleBlock6" parent="IndestructibleWalls/InsideWalls/Line1" instance=ExtResource("1_hj0sg")]
+position = Vector2(128, 32)
+
+[node name="indestructibleBlock8" parent="IndestructibleWalls/InsideWalls/Line1" instance=ExtResource("1_hj0sg")]
+position = Vector2(160, 32)
+
+[node name="indestructibleBlock3" parent="IndestructibleWalls/InsideWalls/Line1" instance=ExtResource("1_hj0sg")]
+position = Vector2(192, 32)
+
+[node name="Line2" type="Node2D" parent="IndestructibleWalls/InsideWalls"]
+
+[node name="indestructibleBlock" parent="IndestructibleWalls/InsideWalls/Line2" instance=ExtResource("1_hj0sg")]
+position = Vector2(32, 64)
+
+[node name="indestructibleBlock2" parent="IndestructibleWalls/InsideWalls/Line2" instance=ExtResource("1_hj0sg")]
+position = Vector2(64, 64)
+
+[node name="indestructibleBlock4" parent="IndestructibleWalls/InsideWalls/Line2" instance=ExtResource("1_hj0sg")]
+position = Vector2(96, 64)
+
+[node name="indestructibleBlock6" parent="IndestructibleWalls/InsideWalls/Line2" instance=ExtResource("1_hj0sg")]
+position = Vector2(128, 64)
+
+[node name="indestructibleBlock8" parent="IndestructibleWalls/InsideWalls/Line2" instance=ExtResource("1_hj0sg")]
+position = Vector2(160, 64)
+
+[node name="indestructibleBlock3" parent="IndestructibleWalls/InsideWalls/Line2" instance=ExtResource("1_hj0sg")]
+position = Vector2(192, 64)
+
+[node name="Line3" type="Node2D" parent="IndestructibleWalls/InsideWalls"]
+
+[node name="indestructibleBlock" parent="IndestructibleWalls/InsideWalls/Line3" instance=ExtResource("1_hj0sg")]
+position = Vector2(32, 96)
+
+[node name="indestructibleBlock2" parent="IndestructibleWalls/InsideWalls/Line3" instance=ExtResource("1_hj0sg")]
+position = Vector2(64, 96)
+
+[node name="indestructibleBlock4" parent="IndestructibleWalls/InsideWalls/Line3" instance=ExtResource("1_hj0sg")]
+position = Vector2(96, 96)
+
+[node name="indestructibleBlock6" parent="IndestructibleWalls/InsideWalls/Line3" instance=ExtResource("1_hj0sg")]
+position = Vector2(128, 96)
+
+[node name="indestructibleBlock8" parent="IndestructibleWalls/InsideWalls/Line3" instance=ExtResource("1_hj0sg")]
+position = Vector2(160, 96)
+
+[node name="indestructibleBlock3" parent="IndestructibleWalls/InsideWalls/Line3" instance=ExtResource("1_hj0sg")]
+position = Vector2(192, 96)
+
+[node name="Line4" type="Node2D" parent="IndestructibleWalls/InsideWalls"]
+
+[node name="indestructibleBlock" parent="IndestructibleWalls/InsideWalls/Line4" instance=ExtResource("1_hj0sg")]
+position = Vector2(32, 128)
+
+[node name="indestructibleBlock2" parent="IndestructibleWalls/InsideWalls/Line4" instance=ExtResource("1_hj0sg")]
+position = Vector2(64, 128)
+
+[node name="indestructibleBlock4" parent="IndestructibleWalls/InsideWalls/Line4" instance=ExtResource("1_hj0sg")]
+position = Vector2(96, 128)
+
+[node name="indestructibleBlock6" parent="IndestructibleWalls/InsideWalls/Line4" instance=ExtResource("1_hj0sg")]
+position = Vector2(128, 128)
+
+[node name="indestructibleBlock8" parent="IndestructibleWalls/InsideWalls/Line4" instance=ExtResource("1_hj0sg")]
+position = Vector2(160, 128)
+
+[node name="indestructibleBlock3" parent="IndestructibleWalls/InsideWalls/Line4" instance=ExtResource("1_hj0sg")]
+position = Vector2(192, 128)
+
+[node name="Line5" type="Node2D" parent="IndestructibleWalls/InsideWalls"]
+
+[node name="indestructibleBlock" parent="IndestructibleWalls/InsideWalls/Line5" instance=ExtResource("1_hj0sg")]
+position = Vector2(32, 160)
+
+[node name="indestructibleBlock2" parent="IndestructibleWalls/InsideWalls/Line5" instance=ExtResource("1_hj0sg")]
+position = Vector2(64, 160)
+
+[node name="indestructibleBlock4" parent="IndestructibleWalls/InsideWalls/Line5" instance=ExtResource("1_hj0sg")]
+position = Vector2(96, 160)
+
+[node name="indestructibleBlock6" parent="IndestructibleWalls/InsideWalls/Line5" instance=ExtResource("1_hj0sg")]
+position = Vector2(128, 160)
+
+[node name="indestructibleBlock8" parent="IndestructibleWalls/InsideWalls/Line5" instance=ExtResource("1_hj0sg")]
+position = Vector2(160, 160)
+
+[node name="indestructibleBlock3" parent="IndestructibleWalls/InsideWalls/Line5" instance=ExtResource("1_hj0sg")]
+position = Vector2(192, 160)
+
+[node name="Line6" type="Node2D" parent="IndestructibleWalls/InsideWalls"]
+
+[node name="indestructibleBlock" parent="IndestructibleWalls/InsideWalls/Line6" instance=ExtResource("1_hj0sg")]
+position = Vector2(32, 192)
+
+[node name="indestructibleBlock2" parent="IndestructibleWalls/InsideWalls/Line6" instance=ExtResource("1_hj0sg")]
+position = Vector2(64, 192)
+
+[node name="indestructibleBlock4" parent="IndestructibleWalls/InsideWalls/Line6" instance=ExtResource("1_hj0sg")]
+position = Vector2(96, 192)
+
+[node name="indestructibleBlock6" parent="IndestructibleWalls/InsideWalls/Line6" instance=ExtResource("1_hj0sg")]
+position = Vector2(128, 192)
+
+[node name="indestructibleBlock8" parent="IndestructibleWalls/InsideWalls/Line6" instance=ExtResource("1_hj0sg")]
+position = Vector2(160, 192)
+
+[node name="indestructibleBlock3" parent="IndestructibleWalls/InsideWalls/Line6" instance=ExtResource("1_hj0sg")]
+position = Vector2(192, 192)
+
+[node name="DesctructibleWalls" type="Node2D" parent="."]
+
+[node name="Line1" type="Node2D" parent="DesctructibleWalls"]
+
+[node name="DesctructibleBlock" parent="DesctructibleWalls/Line1" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 10)
+
+[node name="DesctructibleBlock4" parent="DesctructibleWalls/Line1" instance=ExtResource("3_mmy8a")]
+position = Vector2(58, 10)
+
+[node name="DesctructibleBlock5" parent="DesctructibleWalls/Line1" instance=ExtResource("3_mmy8a")]
+position = Vector2(74, 10)
+
+[node name="DesctructibleBlock6" parent="DesctructibleWalls/Line1" instance=ExtResource("3_mmy8a")]
+position = Vector2(90, 10)
+
+[node name="DesctructibleBlock7" parent="DesctructibleWalls/Line1" instance=ExtResource("3_mmy8a")]
+position = Vector2(106, 10)
+
+[node name="DesctructibleBlock8" parent="DesctructibleWalls/Line1" instance=ExtResource("3_mmy8a")]
+position = Vector2(122, 10)
+
+[node name="DesctructibleBlock9" parent="DesctructibleWalls/Line1" instance=ExtResource("3_mmy8a")]
+position = Vector2(138, 10)
+
+[node name="DesctructibleBlock10" parent="DesctructibleWalls/Line1" instance=ExtResource("3_mmy8a")]
+position = Vector2(154, 10)
+
+[node name="DesctructibleBlock11" parent="DesctructibleWalls/Line1" instance=ExtResource("3_mmy8a")]
+position = Vector2(170, 10)
+
+[node name="Line2" type="Node2D" parent="DesctructibleWalls"]
+
+[node name="DesctructibleBlock" parent="DesctructibleWalls/Line2" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 26)
+
+[node name="DesctructibleBlock2" parent="DesctructibleWalls/Line2" instance=ExtResource("3_mmy8a")]
+position = Vector2(74, 26)
+
+[node name="DesctructibleBlock3" parent="DesctructibleWalls/Line2" instance=ExtResource("3_mmy8a")]
+position = Vector2(106, 26)
+
+[node name="DesctructibleBlock4" parent="DesctructibleWalls/Line2" instance=ExtResource("3_mmy8a")]
+position = Vector2(138, 26)
+
+[node name="DesctructibleBlock5" parent="DesctructibleWalls/Line2" instance=ExtResource("3_mmy8a")]
+position = Vector2(170, 26)
+
+[node name="Line3" type="Node2D" parent="DesctructibleWalls"]
+
+[node name="DesctructibleBlock" parent="DesctructibleWalls/Line3" instance=ExtResource("3_mmy8a")]
+position = Vector2(10, 42)
+
+[node name="DesctructibleBlock2" parent="DesctructibleWalls/Line3" instance=ExtResource("3_mmy8a")]
+position = Vector2(26, 42)
+
+[node name="DesctructibleBlock3" parent="DesctructibleWalls/Line3" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 42)
+
+[node name="DesctructibleBlock4" parent="DesctructibleWalls/Line3" instance=ExtResource("3_mmy8a")]
+position = Vector2(58, 42)
+
+[node name="DesctructibleBlock5" parent="DesctructibleWalls/Line3" instance=ExtResource("3_mmy8a")]
+position = Vector2(74, 42)
+
+[node name="DesctructibleBlock6" parent="DesctructibleWalls/Line3" instance=ExtResource("3_mmy8a")]
+position = Vector2(90, 42)
+
+[node name="DesctructibleBlock7" parent="DesctructibleWalls/Line3" instance=ExtResource("3_mmy8a")]
+position = Vector2(106, 42)
+
+[node name="DesctructibleBlock8" parent="DesctructibleWalls/Line3" instance=ExtResource("3_mmy8a")]
+position = Vector2(122, 42)
+
+[node name="DesctructibleBlock9" parent="DesctructibleWalls/Line3" instance=ExtResource("3_mmy8a")]
+position = Vector2(138, 42)
+
+[node name="DesctructibleBlock10" parent="DesctructibleWalls/Line3" instance=ExtResource("3_mmy8a")]
+position = Vector2(154, 42)
+
+[node name="DesctructibleBlock11" parent="DesctructibleWalls/Line3" instance=ExtResource("3_mmy8a")]
+position = Vector2(170, 42)
+
+[node name="DesctructibleBlock12" parent="DesctructibleWalls/Line3" instance=ExtResource("3_mmy8a")]
+position = Vector2(186, 42)
+
+[node name="DesctructibleBlock13" parent="DesctructibleWalls/Line3" instance=ExtResource("3_mmy8a")]
+position = Vector2(202, 42)
+
+[node name="Line4" type="Node2D" parent="DesctructibleWalls"]
+
+[node name="DesctructibleBlock" parent="DesctructibleWalls/Line4" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 58)
+
+[node name="DesctructibleBlock2" parent="DesctructibleWalls/Line4" instance=ExtResource("3_mmy8a")]
+position = Vector2(74, 58)
+
+[node name="DesctructibleBlock3" parent="DesctructibleWalls/Line4" instance=ExtResource("3_mmy8a")]
+position = Vector2(106, 58)
+
+[node name="DesctructibleBlock4" parent="DesctructibleWalls/Line4" instance=ExtResource("3_mmy8a")]
+position = Vector2(138, 58)
+
+[node name="DesctructibleBlock5" parent="DesctructibleWalls/Line4" instance=ExtResource("3_mmy8a")]
+position = Vector2(170, 58)
+
+[node name="DesctructibleBlock6" parent="DesctructibleWalls/Line4" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 58)
+
+[node name="DesctructibleBlock7" parent="DesctructibleWalls/Line4" instance=ExtResource("3_mmy8a")]
+position = Vector2(202, 58)
+
+[node name="DesctructibleBlock8" parent="DesctructibleWalls/Line4" instance=ExtResource("3_mmy8a")]
+position = Vector2(10, 58)
+
+[node name="Line5" type="Node2D" parent="DesctructibleWalls"]
+
+[node name="DesctructibleBlock" parent="DesctructibleWalls/Line5" instance=ExtResource("3_mmy8a")]
+position = Vector2(10, 74)
+
+[node name="DesctructibleBlock2" parent="DesctructibleWalls/Line5" instance=ExtResource("3_mmy8a")]
+position = Vector2(26, 74)
+
+[node name="DesctructibleBlock3" parent="DesctructibleWalls/Line5" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 74)
+
+[node name="DesctructibleBlock4" parent="DesctructibleWalls/Line5" instance=ExtResource("3_mmy8a")]
+position = Vector2(58, 74)
+
+[node name="DesctructibleBlock5" parent="DesctructibleWalls/Line5" instance=ExtResource("3_mmy8a")]
+position = Vector2(74, 74)
+
+[node name="DesctructibleBlock6" parent="DesctructibleWalls/Line5" instance=ExtResource("3_mmy8a")]
+position = Vector2(90, 74)
+
+[node name="DesctructibleBlock7" parent="DesctructibleWalls/Line5" instance=ExtResource("3_mmy8a")]
+position = Vector2(106, 74)
+
+[node name="DesctructibleBlock8" parent="DesctructibleWalls/Line5" instance=ExtResource("3_mmy8a")]
+position = Vector2(122, 74)
+
+[node name="DesctructibleBlock9" parent="DesctructibleWalls/Line5" instance=ExtResource("3_mmy8a")]
+position = Vector2(138, 74)
+
+[node name="DesctructibleBlock10" parent="DesctructibleWalls/Line5" instance=ExtResource("3_mmy8a")]
+position = Vector2(154, 74)
+
+[node name="DesctructibleBlock11" parent="DesctructibleWalls/Line5" instance=ExtResource("3_mmy8a")]
+position = Vector2(170, 74)
+
+[node name="DesctructibleBlock12" parent="DesctructibleWalls/Line5" instance=ExtResource("3_mmy8a")]
+position = Vector2(186, 74)
+
+[node name="DesctructibleBlock13" parent="DesctructibleWalls/Line5" instance=ExtResource("3_mmy8a")]
+position = Vector2(202, 74)
+
+[node name="Line6" type="Node2D" parent="DesctructibleWalls"]
+
+[node name="DesctructibleBlock" parent="DesctructibleWalls/Line6" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 90)
+
+[node name="DesctructibleBlock2" parent="DesctructibleWalls/Line6" instance=ExtResource("3_mmy8a")]
+position = Vector2(74, 90)
+
+[node name="DesctructibleBlock3" parent="DesctructibleWalls/Line6" instance=ExtResource("3_mmy8a")]
+position = Vector2(106, 90)
+
+[node name="DesctructibleBlock4" parent="DesctructibleWalls/Line6" instance=ExtResource("3_mmy8a")]
+position = Vector2(138, 90)
+
+[node name="DesctructibleBlock5" parent="DesctructibleWalls/Line6" instance=ExtResource("3_mmy8a")]
+position = Vector2(170, 90)
+
+[node name="DesctructibleBlock6" parent="DesctructibleWalls/Line6" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 90)
+
+[node name="DesctructibleBlock7" parent="DesctructibleWalls/Line6" instance=ExtResource("3_mmy8a")]
+position = Vector2(202, 90)
+
+[node name="DesctructibleBlock8" parent="DesctructibleWalls/Line6" instance=ExtResource("3_mmy8a")]
+position = Vector2(10, 90)
+
+[node name="Line7" type="Node2D" parent="DesctructibleWalls"]
+
+[node name="DesctructibleBlock" parent="DesctructibleWalls/Line7" instance=ExtResource("3_mmy8a")]
+position = Vector2(10, 106)
+
+[node name="DesctructibleBlock2" parent="DesctructibleWalls/Line7" instance=ExtResource("3_mmy8a")]
+position = Vector2(26, 106)
+
+[node name="DesctructibleBlock3" parent="DesctructibleWalls/Line7" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 106)
+
+[node name="DesctructibleBlock4" parent="DesctructibleWalls/Line7" instance=ExtResource("3_mmy8a")]
+position = Vector2(58, 106)
+
+[node name="DesctructibleBlock5" parent="DesctructibleWalls/Line7" instance=ExtResource("3_mmy8a")]
+position = Vector2(74, 106)
+
+[node name="DesctructibleBlock6" parent="DesctructibleWalls/Line7" instance=ExtResource("3_mmy8a")]
+position = Vector2(90, 106)
+
+[node name="DesctructibleBlock7" parent="DesctructibleWalls/Line7" instance=ExtResource("3_mmy8a")]
+position = Vector2(106, 106)
+
+[node name="DesctructibleBlock8" parent="DesctructibleWalls/Line7" instance=ExtResource("3_mmy8a")]
+position = Vector2(122, 106)
+
+[node name="DesctructibleBlock9" parent="DesctructibleWalls/Line7" instance=ExtResource("3_mmy8a")]
+position = Vector2(138, 106)
+
+[node name="DesctructibleBlock10" parent="DesctructibleWalls/Line7" instance=ExtResource("3_mmy8a")]
+position = Vector2(154, 106)
+
+[node name="DesctructibleBlock11" parent="DesctructibleWalls/Line7" instance=ExtResource("3_mmy8a")]
+position = Vector2(170, 106)
+
+[node name="DesctructibleBlock12" parent="DesctructibleWalls/Line7" instance=ExtResource("3_mmy8a")]
+position = Vector2(186, 106)
+
+[node name="DesctructibleBlock13" parent="DesctructibleWalls/Line7" instance=ExtResource("3_mmy8a")]
+position = Vector2(202, 106)
+
+[node name="Line8" type="Node2D" parent="DesctructibleWalls"]
+
+[node name="DesctructibleBlock" parent="DesctructibleWalls/Line8" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 122)
+
+[node name="DesctructibleBlock2" parent="DesctructibleWalls/Line8" instance=ExtResource("3_mmy8a")]
+position = Vector2(74, 122)
+
+[node name="DesctructibleBlock3" parent="DesctructibleWalls/Line8" instance=ExtResource("3_mmy8a")]
+position = Vector2(106, 122)
+
+[node name="DesctructibleBlock4" parent="DesctructibleWalls/Line8" instance=ExtResource("3_mmy8a")]
+position = Vector2(138, 122)
+
+[node name="DesctructibleBlock5" parent="DesctructibleWalls/Line8" instance=ExtResource("3_mmy8a")]
+position = Vector2(170, 122)
+
+[node name="DesctructibleBlock6" parent="DesctructibleWalls/Line8" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 122)
+
+[node name="DesctructibleBlock7" parent="DesctructibleWalls/Line8" instance=ExtResource("3_mmy8a")]
+position = Vector2(202, 122)
+
+[node name="DesctructibleBlock8" parent="DesctructibleWalls/Line8" instance=ExtResource("3_mmy8a")]
+position = Vector2(10, 122)
+
+[node name="Line9" type="Node2D" parent="DesctructibleWalls"]
+
+[node name="DesctructibleBlock" parent="DesctructibleWalls/Line9" instance=ExtResource("3_mmy8a")]
+position = Vector2(10, 138)
+
+[node name="DesctructibleBlock2" parent="DesctructibleWalls/Line9" instance=ExtResource("3_mmy8a")]
+position = Vector2(26, 138)
+
+[node name="DesctructibleBlock3" parent="DesctructibleWalls/Line9" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 138)
+
+[node name="DesctructibleBlock4" parent="DesctructibleWalls/Line9" instance=ExtResource("3_mmy8a")]
+position = Vector2(58, 138)
+
+[node name="DesctructibleBlock5" parent="DesctructibleWalls/Line9" instance=ExtResource("3_mmy8a")]
+position = Vector2(74, 138)
+
+[node name="DesctructibleBlock6" parent="DesctructibleWalls/Line9" instance=ExtResource("3_mmy8a")]
+position = Vector2(90, 138)
+
+[node name="DesctructibleBlock7" parent="DesctructibleWalls/Line9" instance=ExtResource("3_mmy8a")]
+position = Vector2(106, 138)
+
+[node name="DesctructibleBlock8" parent="DesctructibleWalls/Line9" instance=ExtResource("3_mmy8a")]
+position = Vector2(122, 138)
+
+[node name="DesctructibleBlock9" parent="DesctructibleWalls/Line9" instance=ExtResource("3_mmy8a")]
+position = Vector2(138, 138)
+
+[node name="DesctructibleBlock10" parent="DesctructibleWalls/Line9" instance=ExtResource("3_mmy8a")]
+position = Vector2(154, 138)
+
+[node name="DesctructibleBlock11" parent="DesctructibleWalls/Line9" instance=ExtResource("3_mmy8a")]
+position = Vector2(170, 138)
+
+[node name="DesctructibleBlock12" parent="DesctructibleWalls/Line9" instance=ExtResource("3_mmy8a")]
+position = Vector2(186, 138)
+
+[node name="DesctructibleBlock13" parent="DesctructibleWalls/Line9" instance=ExtResource("3_mmy8a")]
+position = Vector2(202, 138)
+
+[node name="Line10" type="Node2D" parent="DesctructibleWalls"]
+
+[node name="DesctructibleBlock" parent="DesctructibleWalls/Line10" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 154)
+
+[node name="DesctructibleBlock2" parent="DesctructibleWalls/Line10" instance=ExtResource("3_mmy8a")]
+position = Vector2(74, 154)
+
+[node name="DesctructibleBlock3" parent="DesctructibleWalls/Line10" instance=ExtResource("3_mmy8a")]
+position = Vector2(106, 154)
+
+[node name="DesctructibleBlock4" parent="DesctructibleWalls/Line10" instance=ExtResource("3_mmy8a")]
+position = Vector2(138, 154)
+
+[node name="DesctructibleBlock5" parent="DesctructibleWalls/Line10" instance=ExtResource("3_mmy8a")]
+position = Vector2(170, 154)
+
+[node name="DesctructibleBlock6" parent="DesctructibleWalls/Line10" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 154)
+
+[node name="DesctructibleBlock7" parent="DesctructibleWalls/Line10" instance=ExtResource("3_mmy8a")]
+position = Vector2(202, 154)
+
+[node name="DesctructibleBlock8" parent="DesctructibleWalls/Line10" instance=ExtResource("3_mmy8a")]
+position = Vector2(10, 154)
+
+[node name="Line11" type="Node2D" parent="DesctructibleWalls"]
+
+[node name="DesctructibleBlock" parent="DesctructibleWalls/Line11" instance=ExtResource("3_mmy8a")]
+position = Vector2(10, 170)
+
+[node name="DesctructibleBlock2" parent="DesctructibleWalls/Line11" instance=ExtResource("3_mmy8a")]
+position = Vector2(26, 170)
+
+[node name="DesctructibleBlock3" parent="DesctructibleWalls/Line11" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 170)
+
+[node name="DesctructibleBlock4" parent="DesctructibleWalls/Line11" instance=ExtResource("3_mmy8a")]
+position = Vector2(58, 170)
+
+[node name="DesctructibleBlock5" parent="DesctructibleWalls/Line11" instance=ExtResource("3_mmy8a")]
+position = Vector2(74, 170)
+
+[node name="DesctructibleBlock6" parent="DesctructibleWalls/Line11" instance=ExtResource("3_mmy8a")]
+position = Vector2(90, 170)
+
+[node name="DesctructibleBlock7" parent="DesctructibleWalls/Line11" instance=ExtResource("3_mmy8a")]
+position = Vector2(106, 170)
+
+[node name="DesctructibleBlock8" parent="DesctructibleWalls/Line11" instance=ExtResource("3_mmy8a")]
+position = Vector2(122, 170)
+
+[node name="DesctructibleBlock9" parent="DesctructibleWalls/Line11" instance=ExtResource("3_mmy8a")]
+position = Vector2(138, 170)
+
+[node name="DesctructibleBlock10" parent="DesctructibleWalls/Line11" instance=ExtResource("3_mmy8a")]
+position = Vector2(154, 170)
+
+[node name="DesctructibleBlock11" parent="DesctructibleWalls/Line11" instance=ExtResource("3_mmy8a")]
+position = Vector2(170, 170)
+
+[node name="DesctructibleBlock12" parent="DesctructibleWalls/Line11" instance=ExtResource("3_mmy8a")]
+position = Vector2(186, 170)
+
+[node name="DesctructibleBlock13" parent="DesctructibleWalls/Line11" instance=ExtResource("3_mmy8a")]
+position = Vector2(202, 170)
+
+[node name="Line12" type="Node2D" parent="DesctructibleWalls"]
+
+[node name="DesctructibleBlock" parent="DesctructibleWalls/Line12" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 186)
+
+[node name="DesctructibleBlock2" parent="DesctructibleWalls/Line12" instance=ExtResource("3_mmy8a")]
+position = Vector2(74, 186)
+
+[node name="DesctructibleBlock3" parent="DesctructibleWalls/Line12" instance=ExtResource("3_mmy8a")]
+position = Vector2(106, 186)
+
+[node name="DesctructibleBlock4" parent="DesctructibleWalls/Line12" instance=ExtResource("3_mmy8a")]
+position = Vector2(138, 186)
+
+[node name="DesctructibleBlock5" parent="DesctructibleWalls/Line12" instance=ExtResource("3_mmy8a")]
+position = Vector2(170, 186)
+
+[node name="Line13" type="Node2D" parent="DesctructibleWalls"]
+
+[node name="DesctructibleBlock" parent="DesctructibleWalls/Line13" instance=ExtResource("3_mmy8a")]
+position = Vector2(42, 202)
+
+[node name="DesctructibleBlock4" parent="DesctructibleWalls/Line13" instance=ExtResource("3_mmy8a")]
+position = Vector2(58, 202)
+
+[node name="DesctructibleBlock5" parent="DesctructibleWalls/Line13" instance=ExtResource("3_mmy8a")]
+position = Vector2(74, 202)
+
+[node name="DesctructibleBlock6" parent="DesctructibleWalls/Line13" instance=ExtResource("3_mmy8a")]
+position = Vector2(90, 202)
+
+[node name="DesctructibleBlock7" parent="DesctructibleWalls/Line13" instance=ExtResource("3_mmy8a")]
+position = Vector2(106, 202)
+
+[node name="DesctructibleBlock8" parent="DesctructibleWalls/Line13" instance=ExtResource("3_mmy8a")]
+position = Vector2(122, 202)
+
+[node name="DesctructibleBlock9" parent="DesctructibleWalls/Line13" instance=ExtResource("3_mmy8a")]
+position = Vector2(138, 202)
+
+[node name="DesctructibleBlock10" parent="DesctructibleWalls/Line13" instance=ExtResource("3_mmy8a")]
+position = Vector2(154, 202)
+
+[node name="DesctructibleBlock11" parent="DesctructibleWalls/Line13" instance=ExtResource("3_mmy8a")]
+position = Vector2(170, 202)
